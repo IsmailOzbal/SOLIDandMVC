@@ -1,0 +1,22 @@
+C:\Users\Casper\Desktop\SSE TEST\ExternalServices\bin\Debug\ExternalServices.dll
+C:\Users\Casper\Desktop\SSE TEST\ExternalServices\bin\Debug\ExternalServices.pdb
+C:\Users\Casper\Desktop\SSE TEST\ExternalServices\obj\Debug\ExternalServices.csprojResolveAssemblyReference.cache
+C:\Users\Casper\Desktop\SSE TEST\ExternalServices\obj\Debug\ExternalServices.dll
+C:\Users\Casper\Desktop\SSE TEST\ExternalServices\obj\Debug\ExternalServices.pdb
+C:\Users\C0006075\Desktop\Personal\SSE TEST\SSE TEST\ExternalServices\bin\Debug\ExternalServices.dll
+C:\Users\C0006075\Desktop\Personal\SSE TEST\SSE TEST\ExternalServices\bin\Debug\ExternalServices.pdb
+C:\Users\C0006075\Desktop\Personal\SSE TEST\SSE TEST\ExternalServices\obj\Debug\ExternalServices.csprojAssemblyReference.cache
+C:\Users\C0006075\Desktop\Personal\SSE TEST\SSE TEST\ExternalServices\obj\Debug\ExternalServices.csproj.CoreCompileInputs.cache
+C:\Users\C0006075\Desktop\Personal\SSE TEST\SSE TEST\ExternalServices\obj\Debug\ExternalServices.dll
+C:\Users\C0006075\Desktop\Personal\SSE TEST\SSE TEST\ExternalServices\obj\Debug\ExternalServices.pdb
+C:\Users\vahap\Desktop\dummy\SSE TEST-vahap\SSE TEST\ExternalServices\bin\Debug\ExternalServices.dll
+C:\Users\vahap\Desktop\dummy\SSE TEST-vahap\SSE TEST\ExternalServices\bin\Debug\ExternalServices.pdb
+C:\Users\vahap\Desktop\dummy\SSE TEST-vahap\SSE TEST\ExternalServices\obj\Debug\ExternalServices.csprojResolveAssemblyReference.cache
+C:\Users\vahap\Desktop\dummy\SSE TEST-vahap\SSE TEST\ExternalServices\obj\Debug\ExternalServices.csproj.CoreCompileInputs.cache
+C:\Users\vahap\Desktop\dummy\SSE TEST-vahap\SSE TEST\ExternalServices\obj\Debug\ExternalServices.dll
+C:\Users\vahap\Desktop\dummy\SSE TEST-vahap\SSE TEST\ExternalServices\obj\Debug\ExternalServices.pdb
+C:\Users\Casper\Desktop\SSE_24.01.2019\SSE TEST\ExternalServices\bin\Debug\ExternalServices.dll
+C:\Users\Casper\Desktop\SSE_24.01.2019\SSE TEST\ExternalServices\bin\Debug\ExternalServices.pdb
+C:\Users\Casper\Desktop\SSE_24.01.2019\SSE TEST\ExternalServices\obj\Debug\ExternalServices.dll
+C:\Users\Casper\Desktop\SSE_24.01.2019\SSE TEST\ExternalServices\obj\Debug\ExternalServices.pdb
+C:\Users\Casper\Desktop\SSE_24.01.2019\SSE TEST\ExternalServices\obj\Debug\ExternalServices.csprojResolveAssemblyReference.cache

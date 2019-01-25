@@ -1,0 +1,114 @@
+﻿@model  ExternalServices.DTO.TariffInfo
+@{
+    ViewBag.Title = "GetCustomerTariffs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="information">
+    <div class="col-md-offset-3 col-md-6 col-md-offset-3">
+        <div class="top-gap">
+            <p class="font-large white">Choose a new energy tariff for @Model.PostCode</p>
+            <p class="font-small white">The costs below are based on the estimated usage we worked out from the answers you gave us about your property. We estimate you’ll </p>
+            <p class="font-small white">
+                use:
+                <b>Gas = @Model.AnnualGasUsage kWh per year Electricity = @Model.AnnualElectricUsage kWh per year .</b>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="tariff-body">
+    <div class="col-md-offset-3 col-md-6 col-md-offset-3">
+        <div class="top-gap text-center">
+            <p class="font-large primary">Choose your tariff</p>
+            <p class="font-small">All below prices Include VAT 5% & any applicable discounts</p>
+        </div>
+
+        @foreach (var item in Model.Tariffs)
+        {
+            <div class="tariff-box-web">
+                <div class="col-md-8">
+                    <div class="tariff-box-left-body">
+                        <p class="font-small">@item.TariffName</p>
+                        <p class="font-large primary">@item.TariffFriendlyName</p>
+                        @foreach (var subitem in @item.TariffTerms)
+                        {
+                            <p class="font-small">@subitem</p>
+                        }
+
+                        <a href="#" class="font-small primary left-corner">Gas & electricity information</a>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 top-gap text-center">
+
+                    <p class="font-small primary">Projected monthly cost:</p>
+                    <p class="font-large primary">
+                        £@item.monthlySumPound
+                        <span class="tariff-currency-pence">.@item.monthlySumPence</span>
+                    </p>
+                    <p class="font-small primary">Gas £@item.monthlyGas Electricity £@item.monthlyElectric</p>
+                    <b class="font-small primary">That's £@item.annualSum a year</b>
+                    <p class="font-small">Including your %@item.discount discount  </p>
+                    <button class="btn btn-sm btn-radius btn-primary">Sign Up Now</button>
+
+                </div>
+            </div>
+
+            <div class="tariff-box-mobile">
+                <div class="col-md-12">
+                    <div class="tariff-box-bottom-body top-gap">
+                        <p class="font-small text-center">@item.TariffName</p>
+                        <p class="font-large primary">@item.TariffFriendlyName</p>
+                    </div>
+                </div>
+                <div class="col-md-12 top-gap text-center">
+
+                    <p class="font-small primary">Projected monthly cost:</p>
+                    <p class="font-large primary">
+                        £@item.monthlySumPound
+                        <span class="tariff-currency-pence">.@item.monthlySumPence</span>
+                    </p>
+                    <p class="font-small primary">Gas £@item.monthlyGas Electricity £@item.monthlyElectric</p>
+                    <b class="font-small primary">That's £@item.annualSum a year</b>
+                    <p class="font-small">Including your %@item.discount discount  </p>
+                    @foreach (var subitem in @item.TariffTerms)
+                    {
+                        <p class="font-small">@subitem</p>
+                    }
+                    <button class="btn btn-sm btn-radius btn-primary">Sign Up Now</button>
+                    <a href="#" class="font-small primary text-center">Gas & electricity information</a>
+                </div>
+
+            </div>
+        }
+
+    </div>
+
+</div>
+
+<br />
+<div>
+    <div class="col-md-offset-3 col-md-6 col-md-offset-3">
+        <p class="font-large primary">What you need to know</p>
+        <hr />
+        <a class="font-large primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <i class="glyphicon glyphicon-plus"></i> Important Information
+        </a>
+        <div class="collapse" id="collapseExample">
+            <div class="top-gap">
+                <p class="font-small"> What you need to know before you apply</p>
+                <p class="font-small"> We rely on a mobile phone or wireless signal to get your smart meter readings. If these fail, your bills will be estimated.</p>
+                <p class="font-small"> We’ll send your Welcome pack by email. This includes your confirmation of contract, tariff information, terms and conditions and cancellation form.</p>
+                <p class="font-small"> If we're taking over the supply of energy from another supplier, you agree to your current supplier transferring the right for us to collect any debt you owe them (in the event we're obliged to).</p>
+            </div>
+        </div>
+        <hr />
+        <br />
+        <br />
+    </div>
+
+
+</div>
+

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C63562F4-507C-4C3E-99FB-B07F127062B9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExternalServices</RootNamespace>
+    <AssemblyName>ExternalServices</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BO\BigSpenderDiscount.cs" />
+    <Compile Include="BO\CustomerTypeDiscount.cs" />
+    <Compile Include="BO\GetCustomersBestDiscount.cs" />
+    <Compile Include="BO\InitializeDiscounts.cs" />
+    <Compile Include="BO\LongServiceDiscount.cs" />
+    <Compile Include="BO\PackageDiscount.cs" />
+    <Compile Include="DTO\Enum\BroadbandType.cs" />
+    <Compile Include="DTO\Enum\FuelType.cs" />
+    <Compile Include="DTO\Package.cs" />
+    <Compile Include="DTO\Tariff.cs" />
+    <Compile Include="DTO\TariffInfo.cs" />
+    <Compile Include="Interfaces\IDiscount.cs" />
+    <Compile Include="DTO\AccountHistory.cs" />
+    <Compile Include="DTO\CustomerAccount.cs" />
+    <Compile Include="Interfaces\IAccountsService.cs" />
+    <Compile Include="Interfaces\ICustomerService.cs" />
+    <Compile Include="Interfaces\ITariffManager.cs" />
+    <Compile Include="Interfaces\IPackageService.cs" />
+    <Compile Include="Interfaces\ITariffService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stubs\AccountsServiceStub.cs" />
+    <Compile Include="Stubs\CustomerServiceStub.cs" />
+    <Compile Include="Stubs\PackageServiceStub.cs" />
+    <Compile Include="Stubs\TariffServiceStub.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
